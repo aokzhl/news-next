@@ -1,0 +1,35 @@
+{
+  "name": "05-ssr-and-ssg",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "serve": "ts-node  -O {\"\"\"module\"\"\":\"\"\"commonjs\"\"\"} ./server/index.ts",
+    "dev1": "concurrently --kill-others \"npm run serve\" \"next\""
+  },
+  "dependencies": {
+    "@types/react-redux": "^7.1.16",
+    "@types/styled-components": "^5.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "next": "^9.4.2",
+    "next-redux-wrapper": "^6.0.2",
+    "node-fetch": "^2.6.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-redux": "^7.2.3",
+    "styled-components": "^5.1.0",
+    "ts-node": "^8.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.2",
+    "@types/react": "^16.9.34",
+    "typescript": "^3.8.3"
+  }
+}
